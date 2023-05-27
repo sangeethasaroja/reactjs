@@ -36,6 +36,7 @@ const Moviedetails = () => {
 
     return ( 
         <div className="home">   
+        console.log("hi git");
             <h1>movie-details-components</h1>
             {pending && <h1>Loading.......</h1>}   
             {err &&<h3>{err}</h3>}
