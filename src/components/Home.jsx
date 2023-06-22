@@ -31,7 +31,7 @@ const Home = () => {
             {pending && <h1>loading*********</h1>}
             {error&&<h1>{error}</h1>}
             {movies && <MoviesList movies={movies} title="All movies"/>}
-            {movies && <MoviesList movies={movies.filter((m)=>{return m.genre.includes("action")})} title="Action movies"/>}
+            {movies && <MoviesList movies={movies.filter((m)=>{return m.genre.includes("history")})} title="History movies"/>}
             {movies && <MoviesList movies={movies.filter((m)=>(m.genre.includes("Comedy")))} title="Comedy movies"/>}
             {movies && <MoviesList movies={movies.filter((m)=>{m.genre.includes("drama")})} title="Drama movies"/>}
             {movies && <MoviesList movies={movies.filter((m)=>(m.genre.includes("divine")))} title="Divine movies"/>}

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const MoviesList = ({movies,title}) => {
     let[favid, setFavid]=useState([])
-let[altered,setaltered]=useState(0)
+    let[altered,setaltered]=useState(0)
     useEffect(()=>{
     let fav=JSON.parse(localStorage.getItem("fav"));
     setFavid(fav.map((m)=>{return m.id}));

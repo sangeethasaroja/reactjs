@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Moviedetails from "./components/Moviedetails";
 import Nav from "./components/Nav";
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Search from "./components/Search";
 
 
 function App(){
@@ -18,6 +19,7 @@ function App(){
       <Route path="/add" element={<Addmovie/>}/>
       <Route path="/moviedetail/:id" element={<Moviedetails/>}/>
       <Route path="/fav" element={<Favorites/>}/>
+      <Route path="/search/:searchword" element={<Search/>}/>
       </Routes>
     </div>
     </BrowserRouter>
